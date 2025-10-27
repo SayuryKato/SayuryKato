@@ -1,7 +1,7 @@
 # Hi there! 👋
 
 ![Profile 3D Contribution](https://github.com/SayuryKato/SayuryKato/blob/main/profile-3d-contrib/profile-night-rainbow.svg)
-![Snake game](https://raw.githubusercontent.com/SayuryKato/SayuryKato/output/snake.svg)
+![Snake animation](https://raw.githubusercontent.com/SayuryKato/SayuryKato/output/github-contribution-grid-snake.svg)
 
 ## About me
 - 🔭 Currently learning...
