@@ -1,6 +1,7 @@
 # Hi there! 👋
 
 ![Profile 3D Contribution](https://github.com/SayuryKato/SayuryKato/blob/main/profile-3d-contrib/profile-green-animate.svg)
+![Snake animation](https://github.com/SayuryKato/SayuryKato/blob/output/github-contribution-grid-snake.svg)
 
 ## About me
 - 🔭 Currently learning...
