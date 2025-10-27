@@ -3,10 +3,10 @@ name: Generate Snake
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # executa todo dia à meia-noite
+    - cron: "0 0 * * *"  # Executa todo dia à meia-noite
 
 permissions:
-  contents: write  # 👈 ADICIONE ESTA LINHA!
+  contents: write
 
 jobs:
   build:
@@ -14,18 +14,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Generate Snake
+      - name: Generate Snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: SayuryKato
-          outputs: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push to output branch
+      - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output
           publish_dir: dist
+          publish_branch: output
